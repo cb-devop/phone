@@ -1,0 +1,67 @@
+2026-09-14 16:43:20,102 | ============================================================
+2026-09-14 16:43:20,102 | 🧪 TEST RUN — 20 phones
+2026-09-14 16:43:20,102 | ⏰ 2026-09-14 16:43:20.102679
+2026-09-14 16:43:20,102 | ============================================================
+2026-09-14 16:43:20,102 | Proxy: ✅ ScrapeOps
+2026-09-14 16:43:20,102 | ============================================================
+2026-09-14 16:43:20,835 | 
+📋 Samsung ke phones list kar rahe hain...
+2026-09-14 16:43:21,417 |     ⚠️  Request error: HTTPSConnectionPool(host='www.gsmarena.com', port=443): Max retries exceeded with url: /samsung-phones-9.php (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 401 Unauthorized')))
+2026-09-14 16:43:26,863 |     ⚠️  Request error: HTTPSConnectionPool(host='www.gsmarena.com', port=443): Max retries exceeded with url: /samsung-phones-9.php (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 401 Unauthorized')))
+2026-09-14 16:43:32,543 |     ⚠️  Request error: HTTPSConnectionPool(host='www.gsmarena.com', port=443): Max retries exceeded with url: /samsung-phones-9.php (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 401 Unauthorized')))
+2026-09-14 16:43:37,544 |    ✅ 0 phones mile
+
+2026-09-14 16:43:37,544 | 
+============================================================
+2026-09-14 16:43:37,544 | 🧪 TEST DONE
+2026-09-14 16:43:37,544 |    ✅ Saved:  0
+2026-09-14 16:43:37,545 |    ❌ Errors: 0
+2026-09-14 16:43:37,545 |    ⏰ 2026-09-14 16:43:37.545614
+2026-09-14 16:43:37,545 | ============================================================
+2026-09-14 16:43:37,545 | 
+💡 Check database:
+2026-09-14 16:43:37,545 |    SELECT brand, model, price_inr, image_url FROM phones LIMIT 20;
+2026-09-14 16:45:17,634 | ============================================================
+2026-09-14 16:45:17,634 | 🧪 TEST RUN — 20 phones
+2026-09-14 16:45:17,634 | ⏰ 2026-09-14 16:45:17.634332
+2026-09-14 16:45:17,634 | ============================================================
+2026-09-14 16:45:17,634 | Proxy: ✅ ScrapeOps
+2026-09-14 16:45:17,634 | ============================================================
+2026-09-14 16:45:18,442 | 
+📋 Samsung ke phones list kar rahe hain...
+2026-09-14 16:45:21,126 |    ✅ 20 phones mile
+
+2026-09-14 16:45:21,127 | 
+────────────────────────────────────────────────────────────
+2026-09-14 16:45:21,127 | [1/20] Galaxy A07s
+2026-09-14 16:45:21,127 | ────────────────────────────────────────────────────────────
+2026-09-14 16:45:21,127 |   [1/4] GSMArena scrape...
+2026-09-14 16:45:26,669 |   ✅ GSMArena OK — samsung-galaxy-a07s-2026
+2026-09-14 16:45:26,669 |   [2/4] DXOMARK lookup...
+2026-09-14 16:45:31,718 |   ⏭️  DXOMARK: N/A
+2026-09-14 16:45:34,937 |   [3/4] NanoReview lookup...
+2026-09-14 16:45:36,699 |     ⚠️  HTTP 404 for https://nanoreview.net/en/phone/samsung-galaxy-a07s
+2026-09-14 16:45:36,700 |   ⏭️  AnTuTu: N/A
+2026-09-14 16:45:39,142 |   [4/4] Image download + BG remove + Upload...
+2026-09-14 16:45:40,358 |     🖼️  Downloaded (21 KB)
+2026-09-14 16:45:40,849 |     BG remove failed: cannot identify image file <_io.BytesIO object at 0x00000233BAD244A0>
+2026-09-14 16:45:42,396 |     Image upload failed: Invalid image file
+2026-09-14 16:45:42,396 |   ❌ Image
+2026-09-14 16:45:42,717 |   💾 Saved to database
+2026-09-14 16:45:45,760 | 
+────────────────────────────────────────────────────────────
+2026-09-14 16:45:45,760 | [2/20] Galaxy S26 FE
+2026-09-14 16:45:45,760 | ────────────────────────────────────────────────────────────
+2026-09-14 16:45:45,760 |   [1/4] GSMArena scrape...
+2026-09-14 16:45:47,316 | 
+⚠️  User stopped
+2026-09-14 16:45:47,316 | 
+============================================================
+2026-09-14 16:45:47,316 | 🧪 TEST DONE
+2026-09-14 16:45:47,317 |    ✅ Saved:  1
+2026-09-14 16:45:47,317 |    ❌ Errors: 0
+2026-09-14 16:45:47,317 |    ⏰ 2026-09-14 16:45:47.317605
+2026-09-14 16:45:47,317 | ============================================================
+2026-09-14 16:45:47,317 | 
+💡 Check database:
+2026-09-14 16:45:47,317 |    SELECT brand, model, price_inr, image_url FROM phones LIMIT 20;
